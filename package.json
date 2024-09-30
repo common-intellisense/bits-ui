@@ -7,12 +7,12 @@
   "author": "Simon He",
   "license": "MIT",
   "funding": "https://github.com/sponsors/Simon-He95",
-  "homepage": "https://github.com/common-intellisense/bits-ui0#readme",
+  "homepage": "https://github.com/common-intellisense/bits-ui#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/common-intellisense/bits-ui0.git"
+    "url": "git+https://github.com/common-intellisense/bits-ui.git"
   },
-  "bugs": "https://github.com/common-intellisense/bits-ui0/issues",
+  "bugs": "https://github.com/common-intellisense/bits-ui/issues",
   "keywords": [],
   "sideEffects": false,
   "exports": {
