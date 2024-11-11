@@ -1,7 +1,7 @@
 {
   "name": "LinkPreview.Arrow",
   "props": {
-    "size": {
+    ":size": {
       "value": "",
       "default": "8",
       "type": "number",

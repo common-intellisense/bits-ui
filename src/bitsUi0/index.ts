@@ -136,7 +136,6 @@ import FormLabel from './FormLabel.json'
 import HoverCardContent from './HoverCardContent.json'
 import HoverCardRoot from './HoverCardRoot.json'
 import HoverCardTrigger from './HoverCardTrigger.json'
-import InputRoot from './InputRoot.json'
 import LabelRoot from './LabelRoot.json'
 import LinkPreviewArrow from './LinkPreviewArrow.json'
 import LinkPreviewContent from './LinkPreviewContent.json'
@@ -391,7 +390,6 @@ const map: any = [
   HoverCardContent,
   HoverCardRoot,
   HoverCardTrigger,
-  InputRoot,
   LabelRoot,
   LinkPreviewArrow,
   LinkPreviewContent,
@@ -654,7 +652,6 @@ const componentsMap = [
   [HoverCardContent, HoverCardContent.name, `<${HoverCardContent.name}></${HoverCardContent.name}`],
   [HoverCardRoot, HoverCardRoot.name, `<${HoverCardRoot.name}></${HoverCardRoot.name}`],
   [HoverCardTrigger, HoverCardTrigger.name, `<${HoverCardTrigger.name}></${HoverCardTrigger.name}`],
-  [InputRoot, InputRoot.name, `<${InputRoot.name}></${InputRoot.name}`],
   [LabelRoot, LabelRoot.name, `<${LabelRoot.name}></${LabelRoot.name}`],
   [LinkPreviewArrow, LinkPreviewArrow.name, `<${LinkPreviewArrow.name}></${LinkPreviewArrow.name}`],
   [LinkPreviewContent, LinkPreviewContent.name, `<${LinkPreviewContent.name}></${LinkPreviewContent.name}`],
