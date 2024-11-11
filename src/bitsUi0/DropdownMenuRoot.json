@@ -39,21 +39,21 @@
     "dir": {
       "value": "",
       "default": "_",
-      "type": "enum",
+      "type": "ltr / rtl",
       "description": "The direction of the menu.",
       "description_zh": "菜单的方向。"
     },
     "portal": {
       "value": "",
       "default": "_",
-      "type": "union",
+      "type": "string | HTMLElement | null | undefined",
       "description": "Where to render the menu when it is open. Defaults to the body. Can be disabled by passing null",
       "description_zh": "菜单打开时呈现菜单的位置。默认为正文。可以通过传递 null 来禁用"
     },
-    "closeFocus": {
+    ":closeFocus": {
       "value": "",
       "default": "_",
-      "type": "FocusProp",
+      "type": "type FocusTarget = string | HTMLElement | SVGElement | null;\ntype FocusProp = FocusTarget | ((el?: HTMLElement) => FocusTarget);",
       "description": "Override the focus when the menu is closed.",
       "description_zh": "关闭菜单时覆盖焦点。"
     },
@@ -77,24 +77,25 @@
       "type": "boolean",
       "description": "Whether or not to close the menu when an item is clicked.",
       "description_zh": "是否在单击项目时关闭菜单。"
+    },
+    "onOpenChange": {
+      "value": "",
+      "type": "(open: boolean) => void",
+      "description": "A callback function called when the open state changes.",
+      "description_zh": "A callback function called when the open state changes."
+    },
+    "onOutsideClick": {
+      "value": "",
+      "type": "(event: MouseEvent) => void",
+      "description": "A callback function called when a click occurs outside of the element. If event.preventDefault() is called, the default behavior of closing the element will be prevented.",
+      "description_zh": "A callback function called when a click occurs outside of the element. If event.preventDefault() is called, the default behavior of closing the element will be prevented."
     }
   },
   "description": "The root component which manages & scopes the state of the dropdown menu.",
   "link": "https://www.bits-ui.com/docs/components/dropdown-menu",
   "link_zh": "https://www.bits-ui.com/docs/components/dropdown-menu",
   "typeDetail": {},
-  "events": [
-    {
-      "name": "onOpenChange",
-      "description": "A callback that is fired when the menu's open state changes.",
-      "description_zh": "A callback that is fired when the menu's open state changes."
-    },
-    {
-      "name": "onOutsideClick",
-      "description": "A callback function called when a click occurs outside of the element. If event.preventDefault() is called, the default behavior of closing the element will be prevented.",
-      "description_zh": "A callback function called when a click occurs outside of the element. If event.preventDefault() is called, the default behavior of closing the element will be prevented."
-    }
-  ],
+  "events": [],
   "methods": [],
   "slots": [
     {

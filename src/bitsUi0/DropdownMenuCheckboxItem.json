@@ -11,7 +11,7 @@
     "checked": {
       "value": "",
       "default": "false",
-      "type": "boolean",
+      "type": "true / false / indeterminate",
       "description": "The checkbox menu item's checked state.",
       "description_zh": "复选框菜单项的选中状态。"
     },
@@ -28,19 +28,19 @@
       "type": "HTMLDivElement",
       "description": "The underlying DOM element being rendered. You can bind to this to programatically interact with the element.",
       "description_zh": "正在呈现的基础 DOM 元素。您可以绑定到此元素以编程方式与元素进行交互。"
+    },
+    "onCheckedChange": {
+      "value": "",
+      "type": "(checked: boolean | 'indeterminate') => void",
+      "description": "A callback that is fired when the checkbox menu item's checked state changes.",
+      "description_zh": "A callback that is fired when the checkbox menu item's checked state changes."
     }
   },
   "description": "A menu item that can be controlled and toggled like a checkbox.",
   "link": "https://www.bits-ui.com/docs/components/dropdown-menu",
   "link_zh": "https://www.bits-ui.com/docs/components/dropdown-menu",
   "typeDetail": {},
-  "events": [
-    {
-      "name": "onCheckedChange",
-      "description": "A callback that is fired when the checkbox menu item's checked state changes.",
-      "description_zh": "A callback that is fired when the checkbox menu item's checked state changes."
-    }
-  ],
+  "events": [],
   "methods": [],
   "slots": [
     {

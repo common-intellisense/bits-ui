@@ -112,11 +112,6 @@ import DialogPortal from './DialogPortal.json'
 import DialogRoot from './DialogRoot.json'
 import DialogTitle from './DialogTitle.json'
 import DialogTrigger from './DialogTrigger.json'
-import DrawerContent from './DrawerContent.json'
-import DrawerOverlay from './DrawerOverlay.json'
-import DrawerPortal from './DrawerPortal.json'
-import DrawerRoot from './DrawerRoot.json'
-import DrawerTrigger from './DrawerTrigger.json'
 import DropdownMenuArrow from './DropdownMenuArrow.json'
 import DropdownMenuCheckboxIndicator from './DropdownMenuCheckboxIndicator.json'
 import DropdownMenuCheckboxItem from './DropdownMenuCheckboxItem.json'
@@ -372,11 +367,6 @@ const map: any = [
   DialogRoot,
   DialogTitle,
   DialogTrigger,
-  DrawerContent,
-  DrawerOverlay,
-  DrawerPortal,
-  DrawerRoot,
-  DrawerTrigger,
   DropdownMenuArrow,
   DropdownMenuCheckboxIndicator,
   DropdownMenuCheckboxItem,
@@ -640,11 +630,6 @@ const componentsMap = [
   [DialogRoot, DialogRoot.name, `<${DialogRoot.name}></${DialogRoot.name}`],
   [DialogTitle, DialogTitle.name, `<${DialogTitle.name}></${DialogTitle.name}`],
   [DialogTrigger, DialogTrigger.name, `<${DialogTrigger.name}></${DialogTrigger.name}`],
-  [DrawerContent, DrawerContent.name, `<${DrawerContent.name}></${DrawerContent.name}`],
-  [DrawerOverlay, DrawerOverlay.name, `<${DrawerOverlay.name}></${DrawerOverlay.name}`],
-  [DrawerPortal, DrawerPortal.name, `<${DrawerPortal.name}></${DrawerPortal.name}`],
-  [DrawerRoot, DrawerRoot.name, `<${DrawerRoot.name}></${DrawerRoot.name}`],
-  [DrawerTrigger, DrawerTrigger.name, `<${DrawerTrigger.name}></${DrawerTrigger.name}`],
   [DropdownMenuArrow, DropdownMenuArrow.name, `<${DropdownMenuArrow.name}></${DropdownMenuArrow.name}`],
   [DropdownMenuCheckboxIndicator, DropdownMenuCheckboxIndicator.name, `<${DropdownMenuCheckboxIndicator.name}></${DropdownMenuCheckboxIndicator.name}`],
   [DropdownMenuCheckboxItem, DropdownMenuCheckboxItem.name, `<${DropdownMenuCheckboxItem.name}></${DropdownMenuCheckboxItem.name}`],
