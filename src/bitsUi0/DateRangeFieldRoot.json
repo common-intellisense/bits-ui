@@ -1,38 +1,38 @@
 {
   "name": "DateRangeField.Root",
   "props": {
-    "value": {
+    ":value": {
       "value": "",
       "default": "_",
-      "type": "DateRange",
+      "type": "{ start: DateValue; end: DateValue; }",
       "description": "The selected date range.",
       "description_zh": "所选日期范围。"
     },
     "placeholder": {
       "value": "",
       "default": "_",
-      "type": "DateValue",
+      "type": "CalendarDate | CalendarDateTime | ZonedDateTime",
       "description": "The placeholder date, which is used to determine what date to start the segments from when no value exists.",
       "description_zh": "占位符日期，用于确定在不存在值时从哪个日期开始区段。"
     },
     "isDateUnavailable": {
       "value": "",
       "default": "_",
-      "type": "function",
+      "type": "(date: DateValue) => boolean",
       "description": "A function that returns whether or not a date is unavailable.",
       "description_zh": "一个函数，用于返回日期是否不可用。"
     },
     "hourCycle": {
       "value": "",
       "default": "_",
-      "type": "enum",
+      "type": "12 / 24",
       "description": "The hour cycle to use for formatting times. Defaults to the locale preference",
       "description_zh": "用于格式化时间的小时周期。默认为区域设置首选项"
     },
     "granularity": {
       "value": "",
       "default": "_",
-      "type": "enum",
+      "type": "day / hour / minute / second",
       "description": "The granularity to use for formatting the field. Defaults to 'day' if a CalendarDate is provided, otherwise defaults to 'minute'. The field will render segments for each part of the date up to and including the specified granularity.",
       "description_zh": "用于设置字段格式的粒度。如果提供了 CalendarDate，则默认为“day”，否则默认为“minute”。该字段将呈现日期的每个部分的段，直到并包括指定的粒度。"
     },
@@ -60,14 +60,14 @@
     "maxValue": {
       "value": "",
       "default": "_",
-      "type": "DateValue",
+      "type": "CalendarDate | CalendarDateTime | ZonedDateTime",
       "description": "The maximum valid date that can be entered.",
       "description_zh": "可以输入的最长有效日期。"
     },
     "minValue": {
       "value": "",
       "default": "_",
-      "type": "DateValue",
+      "type": "CalendarDate | CalendarDateTime | ZonedDateTime",
       "description": "The minimum valid date that can be entered.",
       "description_zh": "可以输入的最短有效日期。"
     },
@@ -95,27 +95,30 @@
     "readonlySegments": {
       "value": "",
       "default": "_",
-      "type": "object",
+      "type": "{ start: EditableSegmentPart[]; end: EditableSegmentPart[]; }",
       "description": "The segments for the start and end fields that should be readonly, meaning users cannot edit them. This is useful for prepopulating fixed segments like years, months, or days.",
       "description_zh": "开始和结束字段的段应为只读，这意味着用户无法编辑它们。这对于预填充固定段（如年、月或日）非常有用。"
+    },
+    "onValueChange": {
+      "value": "",
+      "default": "_",
+      "type": "(date: DateRange | undefined) => void",
+      "description": "A function that is called when the selected date changes.",
+      "description_zh": "A function that is called when the selected date changes."
+    },
+    "onPlaceholderChange": {
+      "value": "",
+      "default": "_",
+      "type": "(date: DateValue) => void",
+      "description": "A function that is called when the placeholder date changes.",
+      "description_zh": "A function that is called when the placeholder date changes."
     }
   },
   "description": "The root date field component.",
   "link": "https://www.bits-ui.com/docs/components/date-range-field",
   "link_zh": "https://www.bits-ui.com/docs/components/date-range-field",
   "typeDetail": {},
-  "events": [
-    {
-      "name": "onValueChange",
-      "description": "A function that is called when the selected date changes.",
-      "description_zh": "A function that is called when the selected date changes."
-    },
-    {
-      "name": "onPlaceholderChange",
-      "description": "A function that is called when the placeholder date changes.",
-      "description_zh": "A function that is called when the placeholder date changes."
-    }
-  ],
+  "events": [],
   "methods": [],
   "slots": [
     {

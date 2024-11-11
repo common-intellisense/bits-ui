@@ -4,14 +4,14 @@
     "value": {
       "value": "",
       "default": "_",
-      "type": "DateValue",
+      "type": "CalendarDate | CalendarDateTime | ZonedDateTime",
       "description": "The selected date.",
       "description_zh": "所选日期。"
     },
     "placeholder": {
       "value": "",
       "default": "_",
-      "type": "DateValue",
+      "type": "CalendarDate | CalendarDateTime | ZonedDateTime",
       "description": "The placeholder date, which is used to determine what month to display when no date is selected. This updates as the user navigates the calendar, and can be used to programatically control the calendar's view.",
       "description_zh": "占位符日期，用于确定未选择日期时要显示的月份。这会在用户浏览日历时更新，并可用于以编程方式控制日历的视图。"
     },
@@ -29,7 +29,7 @@
       "description": "Whether or not to prevent the user from deselecting a date without selecting another date first.",
       "description_zh": "是否阻止用户在不先选择其他日期的情况下取消选择日期。"
     },
-    "weekStartsOn": {
+    ":weekStartsOn": {
       "value": "",
       "default": "0",
       "type": "number",
@@ -38,7 +38,7 @@
     },
     "weekdayFormat": {
       "value": "",
-      "default": "narrow",
+      "default": "narrow / short / long",
       "type": "enum",
       "description": "The format to use for the weekday strings provided via the weekdays slot prop.",
       "description_zh": "用于通过工作日插槽 prop 提供的工作日字符串的格式。"
@@ -57,17 +57,17 @@
       "description": "Whether or not to always display 6 weeks in the calendar.",
       "description_zh": "是否始终在日历中显示 6 周。"
     },
-    "isDateDisabled": {
+    ":isDateDisabled": {
       "value": "",
       "default": "_",
-      "type": "function",
+      "type": "(date: DateValue) => boolean",
       "description": "A function that returns whether or not a date is disabled.",
       "description_zh": "一个函数，用于返回是否禁用日期。"
     },
-    "isDateUnavailable": {
+    ":isDateUnavailable": {
       "value": "",
       "default": "_",
-      "type": "function",
+      "type": "(date: DateValue) => boolean",
       "description": "A function that returns whether or not a date is unavailable.",
       "description_zh": "一个函数，用于返回日期是否不可用。"
     },
@@ -81,7 +81,7 @@
     "minValue": {
       "value": "",
       "default": "_",
-      "type": "DateValue",
+      "type": "CalendarDate | CalendarDateTime | ZonedDateTime",
       "description": "The minimum date that can be selected.",
       "description_zh": "可以选择的最小日期。"
     },
@@ -140,24 +140,27 @@
       "type": "HTMLDivElement",
       "description": "The underlying DOM element being rendered. You can bind to this to programatically interact with the element.",
       "description_zh": "正在呈现的基础 DOM 元素。您可以绑定到此元素以编程方式与元素进行交互。"
+    },
+    ":onValueChange": {
+      "value": "",
+      "default": "_",
+      "type": "(date: DateValue | undefined) => void",
+      "description": "A function that is called when the selected date changes.",
+      "description_zh": "A function that is called when the selected date changes."
+    },
+    ":onPlaceholderChange": {
+      "value": "",
+      "default": "_",
+      "type": "(date: DateValue) => void",
+      "description": "A function that is called when the placeholder date changes.",
+      "description_zh": "A function that is called when the placeholder date changes."
     }
   },
   "description": "The root calendar component which contains all other calendar components.",
   "link": "https://www.bits-ui.com/docs/components/calendar",
   "link_zh": "https://www.bits-ui.com/docs/components/calendar",
   "typeDetail": {},
-  "events": [
-    {
-      "name": "onValueChange",
-      "description": "A function that is called when the selected date changes.",
-      "description_zh": "A function that is called when the selected date changes."
-    },
-    {
-      "name": "onPlaceholderChange",
-      "description": "A function that is called when the placeholder date changes.",
-      "description_zh": "A function that is called when the placeholder date changes."
-    }
-  ],
+  "events": [],
   "methods": [],
   "slots": [
     {

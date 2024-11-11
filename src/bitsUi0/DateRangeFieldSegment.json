@@ -18,7 +18,7 @@
     "part": {
       "value": "",
       "default": "_",
-      "type": "SegmentPart",
+      "type": "month / day / year / hour / minute / second / dayPeriod / timeZoneName / literal",
       "description": "The part of the date to render.",
       "description_zh": "要呈现的日期部分。",
       "required": true
@@ -26,7 +26,7 @@
     "type": {
       "value": "",
       "default": "_",
-      "type": "enum",
+      "type": "start / end",
       "description": "The type of field to render (start or end).",
       "description_zh": "要呈现的字段类型（开始或结束）。",
       "required": true

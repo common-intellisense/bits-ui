@@ -18,7 +18,7 @@
     "part": {
       "value": "",
       "default": "_",
-      "type": "SegmentPart",
+      "type": "month / day / year / hour / minute / second / dayPeriod / timeZoneName / literal",
       "description": "The part of the date to render.",
       "description_zh": "要呈现的日期部分。",
       "required": true

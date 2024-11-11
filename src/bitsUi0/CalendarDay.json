@@ -4,14 +4,14 @@
     "date": {
       "value": "",
       "default": "_",
-      "type": "DateValue",
+      "type": "CalendarDate | CalendarDateTime | ZonedDateTime",
       "description": "The date for the cell.",
       "description_zh": "单元格的日期。"
     },
     "month": {
       "value": "",
       "default": "_",
-      "type": "DateValue",
+      "type": "CalendarDate | CalendarDateTime | ZonedDateTime",
       "description": "The current month the date is being displayed in.",
       "description_zh": "显示日期的当前月份。"
     },

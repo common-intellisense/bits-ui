@@ -1,7 +1,7 @@
 {
   "name": "Avatar.Root",
   "props": {
-    "delayMs": {
+    ":delayMs": {
       "value": "",
       "default": "0",
       "type": "number",
@@ -11,7 +11,7 @@
     "loadingStatus": {
       "value": "",
       "default": "_",
-      "type": "LoadingStatus",
+      "type": "loading / loaded / error",
       "description": "The loading status of the avatars source image. You can bind a variable to track the status outside of the component and use it to show a loading indicator or error message.",
       "description_zh": "头像源图像的加载状态。您可以绑定变量来跟踪组件外部的状态，并使用它来显示加载指示器或错误消息。"
     },
@@ -28,19 +28,20 @@
       "type": "HTMLDivElement",
       "description": "The underlying DOM element being rendered. You can bind to this to programatically interact with the element.",
       "description_zh": "正在呈现的基础 DOM 元素。您可以绑定到此元素以编程方式与元素进行交互。"
+    },
+    "onLoadingStatusChange": {
+      "value": "",
+      "default": "_",
+      "type": "(status: LoadingStatus) => void",
+      "description": "A callback function called when the loading status of the image changes.",
+      "description_zh": "A callback function called when the loading status of the image changes."
     }
   },
   "description": "The root component used to set and manage the state of the avatar.",
   "link": "https://www.bits-ui.com/docs/components/avatar",
   "link_zh": "https://www.bits-ui.com/docs/components/avatar",
   "typeDetail": {},
-  "events": [
-    {
-      "name": "onLoadingStatusChange",
-      "description": "A callback function called when the loading status of the image changes.",
-      "description_zh": "A callback function called when the loading status of the image changes."
-    }
-  ],
+  "events": [],
   "methods": [],
   "slots": [
     {

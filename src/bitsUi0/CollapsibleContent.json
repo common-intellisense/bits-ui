@@ -1,42 +1,42 @@
 {
   "name": "Collapsible.Content",
   "props": {
-    "transition": {
+    ":transition": {
       "value": "",
       "default": "_",
-      "type": "function",
+      "type": "(node: Element, params?: any) => TransitionConfig",
       "description": "A Svelte transition function to use when transitioning the content in and out.",
       "description_zh": "在转换内容时使用的 Svelte 过渡函数。"
     },
-    "transitionConfig": {
+    ":transitionConfig": {
       "value": "",
       "default": "_",
       "type": "TransitionConfig",
       "description": "The configuration to apply to the transition.",
       "description_zh": "要应用于转换的配置。"
     },
-    "inTransition": {
+    ":inTransition": {
       "value": "",
       "default": "_",
-      "type": "function",
+      "type": "(node: Element, params?: any) => TransitionConfig",
       "description": "A Svelte transition function to use when transitioning the content in and out.",
       "description_zh": "在转换内容时使用的 Svelte 过渡函数。"
     },
-    "inTransitionConfig": {
+    ":inTransitionConfig": {
       "value": "",
       "default": "_",
       "type": "TransitionConfig",
       "description": "The configuration to apply to the transition.",
       "description_zh": "要应用于转换的配置。"
     },
-    "outTransition": {
+    ":outTransition": {
       "value": "",
       "default": "_",
-      "type": "function",
+      "type": "(node: Element, params?: any) => TransitionConfig",
       "description": "A Svelte transition function to use when transitioning the content in and out.",
       "description_zh": "在转换内容时使用的 Svelte 过渡函数。"
     },
-    "outTransitionConfig": {
+    ":outTransitionConfig": {
       "value": "",
       "default": "_",
       "type": "TransitionConfig",

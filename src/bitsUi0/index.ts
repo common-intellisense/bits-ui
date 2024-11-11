@@ -13,20 +13,10 @@ import AlertDialogPortal from './AlertDialogPortal.json'
 import AlertDialogRoot from './AlertDialogRoot.json'
 import AlertDialogTitle from './AlertDialogTitle.json'
 import AlertDialogTrigger from './AlertDialogTrigger.json'
-import AlertRoot from './AlertRoot.json'
-import AlertTitle from './AlertTitle.json'
 import AspectRatioRoot from './AspectRatioRoot.json'
 import AvatarFallback from './AvatarFallback.json'
 import AvatarImage from './AvatarImage.json'
 import AvatarRoot from './AvatarRoot.json'
-import Badge from './Badge.json'
-import BreadcrumbEllipsis from './BreadcrumbEllipsis.json'
-import BreadcrumbItem from './BreadcrumbItem.json'
-import BreadcrumbLink from './BreadcrumbLink.json'
-import BreadcrumbList from './BreadcrumbList.json'
-import BreadcrumbPage from './BreadcrumbPage.json'
-import BreadcrumbRoot from './BreadcrumbRoot.json'
-import BreadcrumbSeparator from './BreadcrumbSeparator.json'
 import ButtonRoot from './ButtonRoot.json'
 import CalendarCell from './CalendarCell.json'
 import CalendarDay from './CalendarDay.json'
@@ -40,17 +30,6 @@ import CalendarHeading from './CalendarHeading.json'
 import CalendarNextButton from './CalendarNextButton.json'
 import CalendarPrevButton from './CalendarPrevButton.json'
 import CalendarRoot from './CalendarRoot.json'
-import CardContent from './CardContent.json'
-import CardDescription from './CardDescription.json'
-import CardFooter from './CardFooter.json'
-import CardHeader from './CardHeader.json'
-import CardRoot from './CardRoot.json'
-import CardTitle from './CardTitle.json'
-import CarouselContent from './CarouselContent.json'
-import CarouselItem from './CarouselItem.json'
-import CarouselNext from './CarouselNext.json'
-import CarouselPrevious from './CarouselPrevious.json'
-import CarouselRoot from './CarouselRoot.json'
 import CheckboxIndicator from './CheckboxIndicator.json'
 import CheckboxInput from './CheckboxInput.json'
 import CheckboxRoot from './CheckboxRoot.json'
@@ -64,12 +43,6 @@ import ComboboxInput from './ComboboxInput.json'
 import ComboboxItem from './ComboboxItem.json'
 import ComboboxLabel from './ComboboxLabel.json'
 import ComboboxRoot from './ComboboxRoot.json'
-import CommandDialog from './CommandDialog.json'
-import CommandEmpty from './CommandEmpty.json'
-import CommandGroup from './CommandGroup.json'
-import CommandInput from './CommandInput.json'
-import CommandList from './CommandList.json'
-import CommandRoot from './CommandRoot.json'
 import ContextMenuArrow from './ContextMenuArrow.json'
 import ContextMenuCheckboxIndicator from './ContextMenuCheckboxIndicator.json'
 import ContextMenuCheckboxItem from './ContextMenuCheckboxItem.json'
@@ -300,20 +273,10 @@ const map: any = [
   AlertDialogRoot,
   AlertDialogTitle,
   AlertDialogTrigger,
-  AlertRoot,
-  AlertTitle,
   AspectRatioRoot,
   AvatarFallback,
   AvatarImage,
   AvatarRoot,
-  Badge,
-  BreadcrumbEllipsis,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbRoot,
-  BreadcrumbSeparator,
   ButtonRoot,
   CalendarCell,
   CalendarDay,
@@ -327,17 +290,6 @@ const map: any = [
   CalendarNextButton,
   CalendarPrevButton,
   CalendarRoot,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardRoot,
-  CardTitle,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-  CarouselRoot,
   CheckboxIndicator,
   CheckboxInput,
   CheckboxRoot,
@@ -351,12 +303,6 @@ const map: any = [
   ComboboxItem,
   ComboboxLabel,
   ComboboxRoot,
-  CommandDialog,
-  CommandEmpty,
-  CommandGroup,
-  CommandInput,
-  CommandList,
-  CommandRoot,
   ContextMenuArrow,
   ContextMenuCheckboxIndicator,
   ContextMenuCheckboxItem,
@@ -595,20 +541,10 @@ const componentsMap = [
   [AlertDialogRoot, AlertDialogRoot.name, `<${AlertDialogRoot.name}></${AlertDialogRoot.name}`],
   [AlertDialogTitle, AlertDialogTitle.name, `<${AlertDialogTitle.name}></${AlertDialogTitle.name}`],
   [AlertDialogTrigger, AlertDialogTrigger.name, `<${AlertDialogTrigger.name}></${AlertDialogTrigger.name}`],
-  [AlertRoot, AlertRoot.name, `<${AlertRoot.name}></${AlertRoot.name}`],
-  [AlertTitle, AlertTitle.name, `<${AlertTitle.name}></${AlertTitle.name}`],
   [AspectRatioRoot, AspectRatioRoot.name, `<${AspectRatioRoot.name}></${AspectRatioRoot.name}`],
   [AvatarFallback, AvatarFallback.name, `<${AvatarFallback.name}></${AvatarFallback.name}`],
   [AvatarImage, AvatarImage.name, `<${AvatarImage.name}></${AvatarImage.name}`],
   [AvatarRoot, AvatarRoot.name, `<${AvatarRoot.name}></${AvatarRoot.name}`],
-  [Badge, Badge.name, `<${Badge.name}></${Badge.name}`],
-  [BreadcrumbEllipsis, BreadcrumbEllipsis.name, `<${BreadcrumbEllipsis.name}></${BreadcrumbEllipsis.name}`],
-  [BreadcrumbItem, BreadcrumbItem.name, `<${BreadcrumbItem.name}></${BreadcrumbItem.name}`],
-  [BreadcrumbLink, BreadcrumbLink.name, `<${BreadcrumbLink.name}></${BreadcrumbLink.name}`],
-  [BreadcrumbList, BreadcrumbList.name, `<${BreadcrumbList.name}></${BreadcrumbList.name}`],
-  [BreadcrumbPage, BreadcrumbPage.name, `<${BreadcrumbPage.name}></${BreadcrumbPage.name}`],
-  [BreadcrumbRoot, BreadcrumbRoot.name, `<${BreadcrumbRoot.name}></${BreadcrumbRoot.name}`],
-  [BreadcrumbSeparator, BreadcrumbSeparator.name, `<${BreadcrumbSeparator.name}></${BreadcrumbSeparator.name}`],
   [ButtonRoot, ButtonRoot.name, `<${ButtonRoot.name}></${ButtonRoot.name}`],
   [CalendarCell, CalendarCell.name, `<${CalendarCell.name}></${CalendarCell.name}`],
   [CalendarDay, CalendarDay.name, `<${CalendarDay.name}></${CalendarDay.name}`],
@@ -622,17 +558,6 @@ const componentsMap = [
   [CalendarNextButton, CalendarNextButton.name, `<${CalendarNextButton.name}></${CalendarNextButton.name}`],
   [CalendarPrevButton, CalendarPrevButton.name, `<${CalendarPrevButton.name}></${CalendarPrevButton.name}`],
   [CalendarRoot, CalendarRoot.name, `<${CalendarRoot.name}></${CalendarRoot.name}`],
-  [CardContent, CardContent.name, `<${CardContent.name}></${CardContent.name}`],
-  [CardDescription, CardDescription.name, `<${CardDescription.name}></${CardDescription.name}`],
-  [CardFooter, CardFooter.name, `<${CardFooter.name}></${CardFooter.name}`],
-  [CardHeader, CardHeader.name, `<${CardHeader.name}></${CardHeader.name}`],
-  [CardRoot, CardRoot.name, `<${CardRoot.name}></${CardRoot.name}`],
-  [CardTitle, CardTitle.name, `<${CardTitle.name}></${CardTitle.name}`],
-  [CarouselContent, CarouselContent.name, `<${CarouselContent.name}></${CarouselContent.name}`],
-  [CarouselItem, CarouselItem.name, `<${CarouselItem.name}></${CarouselItem.name}`],
-  [CarouselNext, CarouselNext.name, `<${CarouselNext.name}></${CarouselNext.name}`],
-  [CarouselPrevious, CarouselPrevious.name, `<${CarouselPrevious.name}></${CarouselPrevious.name}`],
-  [CarouselRoot, CarouselRoot.name, `<${CarouselRoot.name}></${CarouselRoot.name}`],
   [CheckboxIndicator, CheckboxIndicator.name, `<${CheckboxIndicator.name}></${CheckboxIndicator.name}`],
   [CheckboxInput, CheckboxInput.name, `<${CheckboxInput.name}></${CheckboxInput.name}`],
   [CheckboxRoot, CheckboxRoot.name, `<${CheckboxRoot.name}></${CheckboxRoot.name}`],
@@ -646,12 +571,6 @@ const componentsMap = [
   [ComboboxItem, ComboboxItem.name, `<${ComboboxItem.name}></${ComboboxItem.name}`],
   [ComboboxLabel, ComboboxLabel.name, `<${ComboboxLabel.name}></${ComboboxLabel.name}`],
   [ComboboxRoot, ComboboxRoot.name, `<${ComboboxRoot.name}></${ComboboxRoot.name}`],
-  [CommandDialog, CommandDialog.name, `<${CommandDialog.name}></${CommandDialog.name}`],
-  [CommandEmpty, CommandEmpty.name, `<${CommandEmpty.name}></${CommandEmpty.name}`],
-  [CommandGroup, CommandGroup.name, `<${CommandGroup.name}></${CommandGroup.name}`],
-  [CommandInput, CommandInput.name, `<${CommandInput.name}></${CommandInput.name}`],
-  [CommandList, CommandList.name, `<${CommandList.name}></${CommandList.name}`],
-  [CommandRoot, CommandRoot.name, `<${CommandRoot.name}></${CommandRoot.name}`],
   [ContextMenuArrow, ContextMenuArrow.name, `<${ContextMenuArrow.name}></${ContextMenuArrow.name}`],
   [ContextMenuCheckboxIndicator, ContextMenuCheckboxIndicator.name, `<${ContextMenuCheckboxIndicator.name}></${ContextMenuCheckboxIndicator.name}`],
   [ContextMenuCheckboxItem, ContextMenuCheckboxItem.name, `<${ContextMenuCheckboxItem.name}></${ContextMenuCheckboxItem.name}`],

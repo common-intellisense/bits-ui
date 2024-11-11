@@ -4,14 +4,14 @@
     "value": {
       "value": "",
       "default": "_",
-      "type": "DateValue",
+      "type": "CalendarDate | CalendarDateTime | ZonedDateTime",
       "description": "The selected date.",
       "description_zh": "所选日期。"
     },
     "placeholder": {
       "value": "",
       "default": "_",
-      "type": "DateValue",
+      "type": "CalendarDate | CalendarDateTime | ZonedDateTime",
       "description": "The placeholder date, which is used to determine what month to display when no date is selected. This updates as the user navigates the calendar, and can be used to programatically control the calendar's view.",
       "description_zh": "占位符日期，用于确定未选择日期时要显示的月份。这会在用户浏览日历时更新，并可用于以编程方式控制日历的视图。"
     },
@@ -39,7 +39,7 @@
     "weekdayFormat": {
       "value": "",
       "default": "narrow",
-      "type": "enum",
+      "type": "narrow / short / long",
       "description": "The format to use for the weekday strings provided via the weekdays slot prop.",
       "description_zh": "用于通过工作日插槽 prop 提供的工作日字符串的格式。"
     },
@@ -60,28 +60,28 @@
     "isDateDisabled": {
       "value": "",
       "default": "_",
-      "type": "function",
+      "type": "(date: DateValue) => boolean",
       "description": "A function that returns whether or not a date is disabled.",
       "description_zh": "一个函数，用于返回是否禁用日期。"
     },
     "isDateUnavailable": {
       "value": "",
       "default": "_",
-      "type": "function",
+      "type": "(date: DateValue) => boolean",
       "description": "A function that returns whether or not a date is unavailable.",
       "description_zh": "一个函数，用于返回日期是否不可用。"
     },
     "maxValue": {
       "value": "",
       "default": "_",
-      "type": "DateValue",
+      "type": "CalendarDate | CalendarDateTime | ZonedDateTime",
       "description": "The maximum date that can be selected.",
       "description_zh": "可以选择的最长日期。"
     },
     "minValue": {
       "value": "",
       "default": "_",
-      "type": "DateValue",
+      "type": "CalendarDate | CalendarDateTime | ZonedDateTime",
       "description": "The minimum date that can be selected.",
       "description_zh": "可以选择的最小日期。"
     },
@@ -123,14 +123,14 @@
     "hourCycle": {
       "value": "",
       "default": "_",
-      "type": "enum",
+      "type": "12 / 24",
       "description": "The hour cycle to use for formatting times. Defaults to the locale preference",
       "description_zh": "用于格式化时间的小时周期。默认为区域设置首选项"
     },
     "granularity": {
       "value": "",
       "default": "_",
-      "type": "enum",
+      "type": "day / hour / minute / second",
       "description": "The granularity to use for formatting the field. Defaults to 'day' if a CalendarDate is provided, otherwise defaults to 'minute'. The field will render segments for each part of the date up to and including the specified granularity.",
       "description_zh": "用于设置字段格式的粒度。如果提供了 CalendarDate，则默认为“day”，否则默认为“minute”。该字段将呈现日期的每个部分的段，直到并包括指定的粒度。"
     },
@@ -193,51 +193,58 @@
     "openFocus": {
       "value": "",
       "default": "_",
-      "type": "FocusProp",
+      "type": "type FocusTarget = string | HTMLElement | SVGElement | null;\ntype FocusProp = FocusTarget | ((el?: HTMLElement) => FocusTarget);",
       "description": "Override the focus when the popover is opened.",
       "description_zh": "打开弹出框时覆盖焦点。"
     },
     "closeFocus": {
       "value": "",
       "default": "_",
-      "type": "FocusProp",
+      "type": "type FocusTarget = string | HTMLElement | SVGElement | null;\ntype FocusProp = FocusTarget | ((el?: HTMLElement) => FocusTarget);",
       "description": "Override the focus when the popover is closed.",
       "description_zh": "关闭弹出框时覆盖焦点。"
     },
     "portal": {
       "value": "",
       "default": "_",
-      "type": "union",
+      "type": "string | HTMLElement | null | undefined",
       "description": "Where to render the popover when it is open. Defaults to the body. Can be disabled by passing null",
       "description_zh": "弹出窗口打开时渲染弹出窗口的位置。默认为正文。可以通过传递 null 来禁用"
+    },
+    "onValueChange": {
+      "value": "",
+      "default": "_",
+      "type": "(value: CalendarDate | CalendarDateTime | ZonedDateTime) => void",
+      "description": "A function that is called when the selected date changes.",
+      "description_zh": "A function that is called when the selected date changes."
+    },
+    "onPlaceholderChange": {
+      "value": "",
+      "default": "_",
+      "type": "(value: CalendarDate | CalendarDateTime | ZonedDateTime) => void",
+      "description": "A function that is called when the placeholder date changes.",
+      "description_zh": "A function that is called when the placeholder date changes."
+    },
+    "onOpenChange": {
+      "value": "",
+      "default": "_",
+      "type": "(open: boolean) => void",
+      "description": "A callback that fires when the open state changes.",
+      "description_zh": "A callback that fires when the open state changes."
+    },
+    "onOutsideClick": {
+      "value": "",
+      "default": "_",
+      "type": "(event: MouseEvent) => void",
+      "description": "A callback function called when a click occurs outside of the element. If event.preventDefault() is called, the default behavior of closing the element will be prevented.",
+      "description_zh": "A callback function called when a click occurs outside of the element. If event.preventDefault() is called, the default behavior of closing the element will be prevented."
     }
   },
   "description": "The root date picker component.",
   "link": "https://www.bits-ui.com/docs/components/date-picker",
   "link_zh": "https://www.bits-ui.com/docs/components/date-picker",
   "typeDetail": {},
-  "events": [
-    {
-      "name": "onValueChange",
-      "description": "A function that is called when the selected date changes.",
-      "description_zh": "A function that is called when the selected date changes."
-    },
-    {
-      "name": "onPlaceholderChange",
-      "description": "A function that is called when the placeholder date changes.",
-      "description_zh": "A function that is called when the placeholder date changes."
-    },
-    {
-      "name": "onOpenChange",
-      "description": "A callback that fires when the open state changes.",
-      "description_zh": "A callback that fires when the open state changes."
-    },
-    {
-      "name": "onOutsideClick",
-      "description": "A callback function called when a click occurs outside of the element. If event.preventDefault() is called, the default behavior of closing the element will be prevented.",
-      "description_zh": "A callback function called when a click occurs outside of the element. If event.preventDefault() is called, the default behavior of closing the element will be prevented."
-    }
-  ],
+  "events": [],
   "methods": [],
   "slots": [
     {

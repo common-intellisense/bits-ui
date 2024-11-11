@@ -11,7 +11,7 @@
     "checked": {
       "value": "",
       "default": "false",
-      "type": "boolean",
+      "type": "true / false / indeterminate",
       "description": "The checkbox menu item's checked state.",
       "description_zh": "复选框菜单项的选中状态。"
     },
