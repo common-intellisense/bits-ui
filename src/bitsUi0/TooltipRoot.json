@@ -1,14 +1,14 @@
 {
   "name": "Tooltip.Root",
   "props": {
-    "openDelay": {
+    ":openDelay": {
       "value": "",
       "default": "700",
       "type": "number",
       "description": "The amount of time in milliseconds to delay opening the tooltip when hovering over the trigger.",
       "description_zh": "将鼠标悬停在触发器上时延迟打开工具提示的时间量（以毫秒为单位）。"
     },
-    "closeDelay": {
+    ":closeDelay": {
       "value": "",
       "default": "300",
       "type": "number",
@@ -53,22 +53,23 @@
     "portal": {
       "value": "",
       "default": "_",
-      "type": "union",
+      "type": "string | HTMLElement | null | undefined",
       "description": "Where to render the tooltip when it is open. Defaults to the body. Can be disabled by passing null",
       "description_zh": "打开工具提示时呈现工具提示的位置。默认为正文。可以通过传递 null 来禁用"
+    },
+    ":onOpenChange": {
+      "value": "",
+      "default": "_",
+      "type": "(open: boolean) => void",
+      "description": "A callback that fires when the open state changes.",
+      "description_zh": "A callback that fires when the open state changes."
     }
   },
   "description": "The root component containing the parts of the tooltip.",
   "link": "https://www.bits-ui.com/docs/components/tooltip",
   "link_zh": "https://www.bits-ui.com/docs/components/tooltip",
   "typeDetail": {},
-  "events": [
-    {
-      "name": "onOpenChange",
-      "description": "A callback that fires when the open state changes.",
-      "description_zh": "A callback that fires when the open state changes."
-    }
-  ],
+  "events": [],
   "methods": [],
   "slots": [
     {

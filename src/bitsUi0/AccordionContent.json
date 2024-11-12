@@ -22,7 +22,7 @@
       "description": "A Svelte transition function to use when transitioning the content in and out.",
       "description_zh": "在转换内容时使用的 Svelte 过渡函数。"
     },
-    "inTransitionConfig": {
+    ":inTransitionConfig": {
       "value": "",
       "default": "_",
       "type": "TransitionConfig",

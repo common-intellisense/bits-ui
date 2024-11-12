@@ -15,7 +15,7 @@
       "description": "The placeholder date, which is used to determine what date to start the segments from when no value exists.",
       "description_zh": "占位符日期，用于确定在不存在值时从哪个日期开始区段。"
     },
-    "isDateUnavailable": {
+    ":isDateUnavailable": {
       "value": "",
       "default": "_",
       "type": "(date: DateValue) => boolean",
@@ -99,14 +99,14 @@
       "description": "The segments for the start and end fields that should be readonly, meaning users cannot edit them. This is useful for prepopulating fixed segments like years, months, or days.",
       "description_zh": "开始和结束字段的段应为只读，这意味着用户无法编辑它们。这对于预填充固定段（如年、月或日）非常有用。"
     },
-    "onValueChange": {
+    ":onValueChange": {
       "value": "",
       "default": "_",
       "type": "(date: DateRange | undefined) => void",
       "description": "A function that is called when the selected date changes.",
       "description_zh": "A function that is called when the selected date changes."
     },
-    "onPlaceholderChange": {
+    ":onPlaceholderChange": {
       "value": "",
       "default": "_",
       "type": "(date: DateValue) => void",

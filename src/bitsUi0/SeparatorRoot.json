@@ -4,7 +4,7 @@
     "orientation": {
       "value": "",
       "default": "horizontal",
-      "type": "enum",
+      "type": "vertical / horizontal",
       "description": "The orientation of the separator.",
       "description_zh": "分隔符的方向。"
     },

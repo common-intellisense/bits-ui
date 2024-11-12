@@ -11,7 +11,7 @@
     "orientation": {
       "value": "",
       "default": "horizontal",
-      "type": "enum",
+      "type": "vertical / horizontal",
       "description": "The orientation of the toolbar.",
       "description_zh": "工具栏的方向。"
     },

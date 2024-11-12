@@ -1,7 +1,7 @@
 {
   "name": "Slider.Root",
   "props": {
-    "value": {
+    ":value": {
       "value": "",
       "default": "[]",
       "type": "number[]",
@@ -15,14 +15,14 @@
       "description": "Whether or not the switch is disabled.",
       "description_zh": "开关是否被禁用。"
     },
-    "max": {
+    ":max": {
       "value": "",
       "default": "100",
       "type": "number",
       "description": "The maximum value of the slider.",
       "description_zh": "滑块的最大值。"
     },
-    "min": {
+    ":min": {
       "value": "",
       "default": "0",
       "type": "number",
@@ -31,8 +31,8 @@
     },
     "orientation": {
       "value": "",
-      "default": "\"horizontal\"",
-      "type": "enum",
+      "default": "horizontal",
+      "type": "vertical / horizontal",
       "description": "The orientation of the slider.",
       "description_zh": "滑块的方向。"
     },
@@ -45,8 +45,8 @@
     },
     "dir": {
       "value": "",
-      "default": "\"ltr\"",
-      "type": "enum",
+      "default": "ltr",
+      "type": "ltr / rtl",
       "description": "The reading direction of the slider. If set to 'rtl', the slider will be reversed for both 'horizontal' and 'vertical' orientations.",
       "description_zh": "滑块的读取方向。如果设置为“rtl”，则滑块将反转为“水平”和“垂直”方向。"
     },
@@ -63,19 +63,20 @@
       "type": "HTMLSpanElement",
       "description": "The underlying DOM element being rendered. You can bind to this to programatically interact with the element.",
       "description_zh": "正在呈现的基础 DOM 元素。您可以绑定到此元素以编程方式与元素进行交互。"
+    },
+    ":onValueChange": {
+      "value": "",
+      "default": "_",
+      "type": "function",
+      "description": "A callback function called when the value state of the slider changes.",
+      "description_zh": "A callback function called when the value state of the slider changes."
     }
   },
   "description": "The root slider component which contains the remaining slider components.",
   "link": "https://www.bits-ui.com/docs/components/slider",
   "link_zh": "https://www.bits-ui.com/docs/components/slider",
   "typeDetail": {},
-  "events": [
-    {
-      "name": "onValueChange",
-      "description": "A callback function called when the value state of the slider changes.",
-      "description_zh": "A callback function called when the value state of the slider changes."
-    }
-  ],
+  "events": [],
   "methods": [],
   "slots": [
     {

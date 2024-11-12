@@ -32,7 +32,7 @@
     "type": {
       "value": "",
       "default": "text",
-      "type": "text",
+      "type": "text / password",
       "description": "The type of the input. Use password to mask the input.",
       "description_zh": "输入的类型。使用密码屏蔽输入。"
     },
@@ -49,19 +49,19 @@
       "type": "HTMLDivElement",
       "description": "The underlying DOM element being rendered. You can bind to this to programatically interact with the element.",
       "description_zh": "正在呈现的基础 DOM 元素。您可以绑定到此元素以编程方式与元素进行交互。"
+    },
+    ":onValueChange": {
+      "value": "",
+      "type": "(value: string[]) => void",
+      "description": "A callback function called when the pin-input value changes.",
+      "description_zh": "A callback function called when the pin-input value changes."
     }
   },
   "description": "The root component which contains the pin-input.",
   "link": "https://www.bits-ui.com/docs/components/pin-input",
   "link_zh": "https://www.bits-ui.com/docs/components/pin-input",
   "typeDetail": {},
-  "events": [
-    {
-      "name": "onValueChange",
-      "description": "A callback function called when the pin-input value changes.",
-      "description_zh": "A callback function called when the pin-input value changes."
-    }
-  ],
+  "events": [],
   "methods": [],
   "slots": [
     {

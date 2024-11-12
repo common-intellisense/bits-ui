@@ -1,42 +1,42 @@
 {
   "name": "Menubar.Content",
   "props": {
-    "transition": {
+    ":transition": {
       "value": "",
       "default": "_",
-      "type": "function",
+      "type": "(node: Element, params?: any) => TransitionConfig",
       "description": "A Svelte transition function to use when transitioning the content in and out.",
       "description_zh": "在转换内容时使用的 Svelte 过渡函数。"
     },
-    "transitionConfig": {
+    ":transitionConfig": {
       "value": "",
       "default": "_",
       "type": "TransitionConfig",
       "description": "The configuration to apply to the transition.",
       "description_zh": "要应用于转换的配置。"
     },
-    "inTransition": {
+    ":inTransition": {
       "value": "",
       "default": "_",
-      "type": "function",
+      "type": "(node: Element, params?: any) => TransitionConfig",
       "description": "A Svelte transition function to use when transitioning the content in and out.",
       "description_zh": "在转换内容时使用的 Svelte 过渡函数。"
     },
-    "inTransitionConfig": {
+    ":inTransitionConfig": {
       "value": "",
       "default": "_",
       "type": "TransitionConfig",
       "description": "The configuration to apply to the transition.",
       "description_zh": "要应用于转换的配置。"
     },
-    "outTransition": {
+    ":outTransition": {
       "value": "",
       "default": "_",
-      "type": "function",
+      "type": "(node: Element, params?: any) => TransitionConfig",
       "description": "A Svelte transition function to use when transitioning the content in and out.",
       "description_zh": "在转换内容时使用的 Svelte 过渡函数。"
     },
-    "outTransitionConfig": {
+    ":outTransitionConfig": {
       "value": "",
       "default": "_",
       "type": "TransitionConfig",
@@ -46,11 +46,11 @@
     "side": {
       "value": "",
       "default": "_",
-      "type": "enum",
+      "type": "top / right / bottom / left",
       "description": "The preferred side of the anchor to render against when open. Will be reversed when collisions occur. Floating UI reference.",
       "description_zh": "打开时要渲染的锚点的首选一侧。发生碰撞时将反转。浮动 UI 引用。"
     },
-    "sideOffset": {
+    ":sideOffset": {
       "value": "",
       "default": "0",
       "type": "number",
@@ -60,11 +60,11 @@
     "align": {
       "value": "",
       "default": "_",
-      "type": "enum",
+      "type": "star / center / end",
       "description": "The preferred alignment of the anchor to render against when open. Floating UI reference.",
       "description_zh": "打开时要呈现的锚点的首选对齐方式。浮动 UI 引用。"
     },
-    "alignOffset": {
+    ":alignOffset": {
       "value": "",
       "default": "0",
       "type": "number",
@@ -81,11 +81,11 @@
     "collisionBoundary": {
       "value": "",
       "default": "_",
-      "type": "union",
+      "type": "clippingAncestors / Element / Array<Element> / Rect",
       "description": "A boundary element or array of elements to check for collisions against. Floating UI reference.",
       "description_zh": "要检查碰撞的边界元素或元素数组。浮动 UI 引用。"
     },
-    "collisionPadding": {
+    ":collisionPadding": {
       "value": "",
       "default": "0",
       "type": "number",
@@ -109,7 +109,7 @@
     "strategy": {
       "value": "",
       "default": "absolute",
-      "type": "enum",
+      "type": "absolute / fixed",
       "description": "The positioning strategy to use for the floating element. Floating UI reference.",
       "description_zh": "用于浮动元素的定位策略。浮动 UI 引用。"
     },

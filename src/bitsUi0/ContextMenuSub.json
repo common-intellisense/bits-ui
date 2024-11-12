@@ -15,7 +15,7 @@
       "description": "The open state of the submenu.",
       "description_zh": "子菜单的打开状态。"
     },
-    "onOpenChange": {
+    ":onOpenChange": {
       "value": "",
       "default": "_",
       "type": "(open: boolean) => void",

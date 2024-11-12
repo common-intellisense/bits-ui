@@ -64,7 +64,7 @@
       "description": "The preferred alignment of the anchor to render against when open. Floating UI reference.",
       "description_zh": "打开时要呈现的锚点的首选对齐方式。浮动 UI 引用。"
     },
-    "alignOffset": {
+    ":alignOffset": {
       "value": "",
       "default": "0",
       "type": "number",

@@ -50,7 +50,7 @@
       "description": "The open state of the select menu.",
       "description_zh": "选择菜单的打开状态。"
     },
-    "selected": {
+    ":selected": {
       "value": "",
       "default": "_",
       "type": "object",
@@ -60,7 +60,7 @@
     "portal": {
       "value": "",
       "default": "_",
-      "type": "union",
+      "type": "string | HTMLElement | null | undefined",
       "description": "Where to render the select menu when it is open. Defaults to the body. Can be disabled by passing null",
       "description_zh": "选择菜单打开时的呈现位置。默认为正文。可以通过传递 null 来禁用"
     },
@@ -88,7 +88,7 @@
     "scrollAlignment": {
       "value": "",
       "default": "nearest",
-      "type": "enum",
+      "type": "nearest / center",
       "description": "The alignment of the highlighted item when scrolling.",
       "description_zh": "滚动时突出显示的项目的对齐方式。"
     },
@@ -99,35 +99,40 @@
       "description": "Whether or not to enable typeahead functionality. When enabled, the user can type to navigate to menu items.",
       "description_zh": "是否启用预输入功能。启用后，用户可以键入以导航到菜单项。"
     },
-    "items": {
+    ":items": {
       "value": "",
       "default": "_",
-      "type": "Selected[]",
+      "type": "Array<{ value: T; label?: string }>",
       "description": "An array of items to add type-safety to the onSelectedChange callback.",
       "description_zh": "用于向 onSelectedChange 回调添加类型安全性的项数组。"
+    },
+    ":onOpenChange": {
+      "value": "",
+      "default": "_",
+      "type": "(open: boolean) => void",
+      "description": "A callback that is fired when the select menu's open state changes.",
+      "description_zh": "A callback that is fired when the select menu's open state changes."
+    },
+    ":onSelectedChange": {
+      "value": "",
+      "default": "_",
+      "type": "(selected: Selected) => void",
+      "description": "A callback that is fired when the select menu's value changes.",
+      "description_zh": "A callback that is fired when the select menu's value changes."
+    },
+    ":onOutsideClick": {
+      "value": "",
+      "default": "_",
+      "type": "(event: MouseEvent) => void",
+      "description": "A callback function called when a click occurs outside of the element. If event.preventDefault() is called, the default behavior of closing the element will be prevented.",
+      "description_zh": "A callback function called when a click occurs outside of the element. If event.preventDefault() is called, the default behavior of closing the element will be prevented."
     }
   },
   "description": "The root select component which manages & scopes the state of the select.",
   "link": "https://www.bits-ui.com/docs/components/select",
   "link_zh": "https://www.bits-ui.com/docs/components/select",
   "typeDetail": {},
-  "events": [
-    {
-      "name": "onOpenChange",
-      "description": "A callback that is fired when the select menu's open state changes.",
-      "description_zh": "A callback that is fired when the select menu's open state changes."
-    },
-    {
-      "name": "onSelectedChange",
-      "description": "A callback that is fired when the select menu's value changes.",
-      "description_zh": "A callback that is fired when the select menu's value changes."
-    },
-    {
-      "name": "onOutsideClick",
-      "description": "A callback function called when a click occurs outside of the element. If event.preventDefault() is called, the default behavior of closing the element will be prevented.",
-      "description_zh": "A callback function called when a click occurs outside of the element. If event.preventDefault() is called, the default behavior of closing the element will be prevented."
-    }
-  ],
+  "events": [],
   "methods": [],
   "slots": [
     {

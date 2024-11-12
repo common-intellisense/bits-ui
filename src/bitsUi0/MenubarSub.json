@@ -14,19 +14,19 @@
       "type": "boolean",
       "description": "The open state of the submenu.",
       "description_zh": "子菜单的打开状态。"
+    },
+    ":onOpenChange": {
+      "value": "",
+      "type": "(open: boolean) => void",
+      "description": "A callback that is fired when the submenu's open state changes.",
+      "description_zh": "A callback that is fired when the submenu's open state changes."
     }
   },
   "description": "A submenu belonging to the parent dropdown menu. Responsible for managing the state of the submenu.",
   "link": "https://www.bits-ui.com/docs/components/menubar",
   "link_zh": "https://www.bits-ui.com/docs/components/menubar",
   "typeDetail": {},
-  "events": [
-    {
-      "name": "onOpenChange",
-      "description": "A callback that is fired when the submenu's open state changes.",
-      "description_zh": "A callback that is fired when the submenu's open state changes."
-    }
-  ],
+  "events": [],
   "methods": [],
   "slots": [
     {

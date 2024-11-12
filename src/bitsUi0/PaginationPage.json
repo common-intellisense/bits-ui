@@ -4,7 +4,7 @@
     "page": {
       "value": "",
       "default": "_",
-      "type": "PageItem",
+      "type": "export type Page = { type: 'page'; value: number; }; \nexport type Ellipsis = { type: 'ellipsis'; }; \nexport type PageItem = (Page | Ellipsis) & { key: string; };",
       "description": "The page item this component represents.",
       "description_zh": "此组件表示的页面项。"
     },

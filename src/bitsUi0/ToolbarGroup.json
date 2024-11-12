@@ -4,7 +4,7 @@
     "value": {
       "value": "",
       "default": "_",
-      "type": "union",
+      "type": "string | string[]",
       "description": "The value of the toggle group. If the type is multiple, this will be an array of strings, otherwise it will be a string.",
       "description_zh": "切换组的值。如果类型为多个，则这将是一个字符串数组，否则它将是一个字符串。"
     },
@@ -18,7 +18,7 @@
     "type": {
       "value": "",
       "default": "single",
-      "type": "enum",
+      "type": "single / multiple",
       "description": "The type of toggle group.",
       "description_zh": "切换组的类型。"
     },
@@ -35,19 +35,20 @@
       "type": "HTMLDivElement",
       "description": "The underlying DOM element being rendered. You can bind to this to programatically interact with the element.",
       "description_zh": "正在呈现的基础 DOM 元素。您可以绑定到此元素以编程方式与元素进行交互。"
+    },
+    ":onValueChange": {
+      "value": "",
+      "default": "_",
+      "type": "(value: string | string[]) => void",
+      "description": "A callback function called when the value changes.",
+      "description_zh": "A callback function called when the value changes."
     }
   },
   "description": "A group of toggle items in the toolbar.",
   "link": "https://www.bits-ui.com/docs/components/toolbar",
   "link_zh": "https://www.bits-ui.com/docs/components/toolbar",
   "typeDetail": {},
-  "events": [
-    {
-      "name": "onValueChange",
-      "description": "A callback function called when the value changes.",
-      "description_zh": "A callback function called when the value changes."
-    }
-  ],
+  "events": [],
   "methods": [],
   "slots": [
     {

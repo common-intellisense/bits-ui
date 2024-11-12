@@ -1,21 +1,21 @@
 {
   "name": "Pagination.Root",
   "props": {
-    "perPage": {
+    ":perPage": {
       "value": "",
       "default": "1",
       "type": "number",
       "description": "The number of items per page.",
       "description_zh": "每页的项目数。"
     },
-    "siblingCount": {
+    ":siblingCount": {
       "value": "",
       "default": "1",
       "type": "number",
       "description": "The number of page triggers to show on either side of the current page.",
       "description_zh": "要在当前页面的任一侧显示的页面触发器数。"
     },
-    "page": {
+    ":page": {
       "value": "",
       "default": "_",
       "type": "number",
@@ -43,19 +43,19 @@
       "description": "The total number of items.",
       "description_zh": "项目总数。",
       "required": true
+    },
+    ":onPageChange": {
+      "value": "",
+      "type": "(page: number) => void",
+      "description": "A function called when the selected page changes.",
+      "description_zh": "A function called when the selected page changes."
     }
   },
   "description": "The root pagination component which contains all other pagination components.",
   "link": "https://www.bits-ui.com/docs/components/pagination",
   "link_zh": "https://www.bits-ui.com/docs/components/pagination",
   "typeDetail": {},
-  "events": [
-    {
-      "name": "onPageChange",
-      "description": "A function called when the selected page changes.",
-      "description_zh": "A function called when the selected page changes."
-    }
-  ],
+  "events": [],
   "methods": [],
   "slots": [],
   "suggestions": [

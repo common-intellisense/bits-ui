@@ -4,7 +4,7 @@
     "type": {
       "value": "",
       "default": "_",
-      "type": "enum",
+      "type": "hover / scroll / auto / always",
       "description": "The type of scroll area.",
       "description_zh": "滚动区域的类型。"
     },
@@ -18,7 +18,7 @@
     "dir": {
       "value": "",
       "default": "_",
-      "type": "enum",
+      "type": "ltr / rtl",
       "description": "The reading direction of the scroll area.",
       "description_zh": "滚动区域的读取方向。"
     },

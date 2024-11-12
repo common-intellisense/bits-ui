@@ -22,7 +22,7 @@
       "description": "Whether or not to include the input element in the switch. This will automatically add a hidden input element to the switch that will be checked when the switch is checked.",
       "description_zh": "是否在开关中包含输入元素。这将自动向开关添加一个隐藏的输入元素，该元素将在选中开关时进行检查。"
     },
-    "inputAttrs": {
+    ":inputAttrs": {
       "value": "",
       "default": "_",
       "type": "object",
@@ -63,19 +63,20 @@
       "type": "HTMLButtonElement",
       "description": "The underlying DOM element being rendered. You can bind to this to programatically interact with the element.",
       "description_zh": "正在呈现的基础 DOM 元素。您可以绑定到此元素以编程方式与元素进行交互。"
+    },
+    ":onCheckedChange": {
+      "value": "",
+      "default": "_",
+      "type": "function",
+      "description": "A callback function called when the checked state of the switch changes.",
+      "description_zh": "A callback function called when the checked state of the switch changes."
     }
   },
   "description": "The root switch component used to set and manage the state of the switch.",
   "link": "https://www.bits-ui.com/docs/components/switch",
   "link_zh": "https://www.bits-ui.com/docs/components/switch",
   "typeDetail": {},
-  "events": [
-    {
-      "name": "onCheckedChange",
-      "description": "A callback function called when the checked state of the switch changes.",
-      "description_zh": "A callback function called when the checked state of the switch changes."
-    }
-  ],
+  "events": [],
   "methods": [],
   "slots": [
     {

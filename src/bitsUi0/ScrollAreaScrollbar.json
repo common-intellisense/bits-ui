@@ -18,7 +18,7 @@
     "orientation": {
       "value": "",
       "default": "_",
-      "type": "enum",
+      "type": "vertical / horizontal",
       "description": "The orientation of the scrollbar.",
       "description_zh": "滚动条的方向。",
       "required": true

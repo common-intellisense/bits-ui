@@ -50,13 +50,13 @@
       "description": "Where to render the dialog when it is open. Defaults to the body. Can be disabled by passing null",
       "description_zh": "对话框打开时呈现对话框的位置。默认为正文。可以通过传递 null 来禁用"
     },
-    "onOpenChange": {
+    ":onOpenChange": {
       "value": "",
       "type": "(open: boolean) => void",
       "description": "A callback function called when the open state changes.",
       "description_zh": "A callback function called when the open state changes."
     },
-    "onOutsideClick": {
+    ": onOutsideClick": {
       "value": "",
       "type": "(event: PointerEvent) => void",
       "description": "A callback function called when a click occurs outside of the element. If event.preventDefault() is called, the default behavior of closing the element will be prevented.",

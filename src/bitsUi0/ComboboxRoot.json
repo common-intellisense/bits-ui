@@ -113,21 +113,21 @@
       "description": "The touched state of the input. When the menu closes, the state is reset to false. Whenever a key is pressed into the input, the state is set to true. You can bind to this to handle filtering the items only when the input has been touched.",
       "description_zh": "输入的触摸状态。当菜单关闭时，状态将重置为 false。每当将键按入输入时，状态都会设置为 true。您可以绑定到此项，以仅在触及输入时处理筛选项目。"
     },
-    "onOpenChange": {
+    ":onOpenChange": {
       "value": "",
       "default": "_",
       "type": "(open: boolean) => void",
       "description": "A callback that is fired when the combobox menu's open state changes.",
       "description_zh": "A callback that is fired when the combobox menu's open state changes."
     },
-    "onSelectedChange": {
+    ":onSelectedChange": {
       "value": "",
       "default": "_",
       "type": "(selected: Selected) => void",
       "description": "A callback that is fired when the combobox menu's value changes.",
       "description_zh": "A callback that is fired when the combobox menu's value changes."
     },
-    "onOutsideClick": {
+    ": onOutsideClick": {
       "value": "",
       "default": "_",
       "type": "(event: MouseEvent) => void",

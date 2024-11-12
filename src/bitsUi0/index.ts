@@ -224,20 +224,10 @@ import SliderThumb from './SliderThumb.json'
 import SliderTick from './SliderTick.json'
 import SwitchRoot from './SwitchRoot.json'
 import SwitchThumb from './SwitchThumb.json'
-import TableBody from './TableBody.json'
-import TableCaption from './TableCaption.json'
-import TableCell from './TableCell.json'
-import TableFooter from './TableFooter.json'
-import TableHead from './TableHead.json'
-import TableHeader from './TableHeader.json'
-import TableRoot from './TableRoot.json'
-import TableRow from './TableRow.json'
 import TabsContent from './TabsContent.json'
 import TabsList from './TabsList.json'
 import TabsRoot from './TabsRoot.json'
 import TabsTrigger from './TabsTrigger.json'
-import TextareaRoot from './TextareaRoot.json'
-import ToasterRoot from './ToasterRoot.json'
 import ToggleGroupItem from './ToggleGroupItem.json'
 import ToggleGroupRoot from './ToggleGroupRoot.json'
 import ToggleRoot from './ToggleRoot.json'
@@ -478,20 +468,10 @@ const map: any = [
   SliderTick,
   SwitchRoot,
   SwitchThumb,
-  TableBody,
-  TableCaption,
-  TableCell,
-  TableFooter,
-  TableHead,
-  TableHeader,
-  TableRoot,
-  TableRow,
   TabsContent,
   TabsList,
   TabsRoot,
   TabsTrigger,
-  TextareaRoot,
-  ToasterRoot,
   ToggleGroupItem,
   ToggleGroupRoot,
   ToggleRoot,
@@ -740,20 +720,10 @@ const componentsMap = [
   [SliderTick, SliderTick.name, `<${SliderTick.name}></${SliderTick.name}`],
   [SwitchRoot, SwitchRoot.name, `<${SwitchRoot.name}></${SwitchRoot.name}`],
   [SwitchThumb, SwitchThumb.name, `<${SwitchThumb.name}></${SwitchThumb.name}`],
-  [TableBody, TableBody.name, `<${TableBody.name}></${TableBody.name}`],
-  [TableCaption, TableCaption.name, `<${TableCaption.name}></${TableCaption.name}`],
-  [TableCell, TableCell.name, `<${TableCell.name}></${TableCell.name}`],
-  [TableFooter, TableFooter.name, `<${TableFooter.name}></${TableFooter.name}`],
-  [TableHead, TableHead.name, `<${TableHead.name}></${TableHead.name}`],
-  [TableHeader, TableHeader.name, `<${TableHeader.name}></${TableHeader.name}`],
-  [TableRoot, TableRoot.name, `<${TableRoot.name}></${TableRoot.name}`],
-  [TableRow, TableRow.name, `<${TableRow.name}></${TableRow.name}`],
   [TabsContent, TabsContent.name, `<${TabsContent.name}></${TabsContent.name}`],
   [TabsList, TabsList.name, `<${TabsList.name}></${TabsList.name}`],
   [TabsRoot, TabsRoot.name, `<${TabsRoot.name}></${TabsRoot.name}`],
   [TabsTrigger, TabsTrigger.name, `<${TabsTrigger.name}></${TabsTrigger.name}`],
-  [TextareaRoot, TextareaRoot.name, `<${TextareaRoot.name}></${TextareaRoot.name}`],
-  [ToasterRoot, ToasterRoot.name, `<${ToasterRoot.name}></${ToasterRoot.name}`],
   [ToggleGroupItem, ToggleGroupItem.name, `<${ToggleGroupItem.name}></${ToggleGroupItem.name}`],
   [ToggleGroupRoot, ToggleGroupRoot.name, `<${ToggleGroupRoot.name}></${ToggleGroupRoot.name}`],
   [ToggleRoot, ToggleRoot.name, `<${ToggleRoot.name}></${ToggleRoot.name}`],

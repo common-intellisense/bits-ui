@@ -78,13 +78,13 @@
       "description": "Whether or not to close the menu when an item is clicked.",
       "description_zh": "是否在单击项目时关闭菜单。"
     },
-    "onOpenChange": {
+    ":onOpenChange": {
       "value": "",
       "type": "(open: boolean) => void",
       "description": "A callback function called when the open state changes.",
       "description_zh": "A callback function called when the open state changes."
     },
-    "onOutsideClick": {
+    ": onOutsideClick": {
       "value": "",
       "type": "(event: MouseEvent) => void",
       "description": "A callback function called when a click occurs outside of the element. If event.preventDefault() is called, the default behavior of closing the element will be prevented.",

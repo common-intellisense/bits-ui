@@ -50,7 +50,7 @@
       "description": "Where to render the menu when it is open. Defaults to the body. Can be disabled by passing null",
       "description_zh": "菜单打开时呈现菜单的位置。默认为正文。可以通过传递 null 来禁用"
     },
-    "closeFocus": {
+    ":closeFocus": {
       "value": "",
       "default": "_",
       "type": "type FocusTarget = string | HTMLElement | SVGElement | null;\ntype FocusProp = FocusTarget | ((el?: HTMLElement) => FocusTarget);",
@@ -78,14 +78,14 @@
       "description": "Whether or not to close the menu when an item is clicked.",
       "description_zh": "是否在单击项目时关闭菜单。"
     },
-    "onOpenChange": {
+    ":onOpenChange": {
       "value": "",
       "default": "_",
       "type": "(open: boolean) => void",
       "description": "A callback that is fired when the menu's open state changes.",
       "description_zh": "A callback that is fired when the menu's open state changes."
     },
-    "onOutsideClick": {
+    ": onOutsideClick": {
       "value": "",
       "default": "_",
       "type": "(event: MouseEvent) => void",
